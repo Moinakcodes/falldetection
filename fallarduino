@@ -1,0 +1,28 @@
+#include "BluetoothSerial.h"
+#include <Wire.h>
+
+BluetoothSerial SerialBT;
+
+const int MPU_ADDR = 0x68;  // MPU6050 I2C address
+const int buzzerPin = 4;
+
+// Time tracking variables
+unsigned long startTime;  // Stores the time when the ESP32 starts
+
+void setup() {
+    Serial.begin(115200);
+    SerialBT.begin("ESP32_Fall_Detection"); // Bluetooth device name
+    Wire.begin();
+    pinMode(buzzerPin, OUTPUT);
+
+    // Initialize MPU6050
+    Wire.beginTransmission(MPU_ADDR);
+    Wire.write(0x6B); // Power management register
+    Wire.write(0);    // Wake up sensor
+    Wire.endTransmission();
+
+    // Initialize time
+    startTime = millis();  // Save start time when ESP32 boots
+}
+
+
