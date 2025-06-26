@@ -62,5 +62,15 @@ void loop() {
     SerialBT.print("X: "); SerialBT.print(AccX);
     SerialBT.print(" Y: "); SerialBT.print(AccY);
     SerialBT.print(" Z: "); SerialBT.println(AccZ);
+ // Fall detection based on Z-axis drop
+    if (abs(AccZ) < 2000) { // Adjust threshold if needed
+        SerialBT.println("FALL DETECTED!");
+        digitalWrite(buzzerPin, HIGH);
+        delay(1000);
+        digitalWrite(buzzerPin, LOW);
+    }
 
-   
+    delay(200); // Faster sampling rate
+}
+
+
