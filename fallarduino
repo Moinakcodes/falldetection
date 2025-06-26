@@ -44,4 +44,8 @@ void displayTime() {
     unsigned long hours = (seconds / 3600) % 24;
     SerialBT.print("Time: ");
     SerialBT.print(hours);
+    SerialBT.print(":");
+    SerialBT.print(minutes);
+    SerialBT.print(":");
+    SerialBT.print(seconds % 60);
 
