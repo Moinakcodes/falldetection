@@ -1,1 +1,1 @@
-# falldetection
+we aimed to help the elderly to overcome fear and prevent falling .we initially aimed to increase accuracy by implementing ai model through tensorflow lite but we faced challenges while training data and running the model in esp32 so due to time and knowledge constraints we focused on   calibrating  our sensor to detect fall motion with mpu6050 and hooking it with esp32 we used blynk to make an iot output where messages and alerts are notified
