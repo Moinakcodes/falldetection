@@ -48,4 +48,15 @@ void displayTime() {
     SerialBT.print(minutes);
     SerialBT.print(":");
     SerialBT.print(seconds % 60);
+    SerialBT.print(" | ");
+}
+
+void loop() {
+    int16_t AccX, AccY, AccZ;
+    readAcceleration(AccX, AccY, AccZ);
+
+    // Display simulated time
+    displayTime();
+
+    // Print raw accelerometer values
 
