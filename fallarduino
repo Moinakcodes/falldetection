@@ -36,5 +36,10 @@ void readAcceleration(int16_t &AccX, int16_t &AccY, int16_t &AccZ) {
     AccY = Wire.read() << 8 | Wire.read();
     AccZ = Wire.read() << 8 | Wire.read();
 }
-
+// Function to display time since the ESP32 started
+void displayTime() {
+    unsigned long elapsedTime = millis() - startTime;  // Time since boot in milliseconds
+    unsigned long seconds = elapsedTime / 1000;
+    unsigned long minutes = (seconds / 60) % 60;
+    unsigned long hours = (seconds / 3600) % 24;
 
