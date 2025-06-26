@@ -59,4 +59,8 @@ void loop() {
     displayTime();
 
     // Print raw accelerometer values
+    SerialBT.print("X: "); SerialBT.print(AccX);
+    SerialBT.print(" Y: "); SerialBT.print(AccY);
+    SerialBT.print(" Z: "); SerialBT.println(AccZ);
 
+   
