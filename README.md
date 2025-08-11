@@ -12,3 +12,30 @@ The system detects sudden changes in acceleration/angle that indicate a fall, th
 - Optional OLED message display (`Fall Detected!`)
 - Optional Wi-Fi alert (Blynk / HTTP / MQTT)
 
+---
+
+## 🛠 Hardware Required
+| Component           | Quantity |
+|---------------------|----------|
+| ESP32 Dev Board     | 1        |
+| MPU6050 Sensor      | 1        |
+| Buzzer (Piezo)      | 1        |
+| 0.96" OLED Display  | 1 *(optional)* |
+| Jumper Wires        | As needed |
+| Breadboard          | 1        |
+
+---
+
+## 📡 Connections
+
+### MPU6050 → ESP32
+| MPU6050 Pin | ESP32 Pin |
+|-------------|-----------|
+| VCC         | 3.3V      |
+| GND         | GND       |
+| SCL         | GPIO 22   |
+| SDA         | GPIO 21   |
+
+
+
+---
