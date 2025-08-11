@@ -5,3 +5,10 @@ we aimed to help the elderly to overcome fear and prevent falling .we initially 
 This project implements a **Fall Detection System** using an **ESP32** and **MPU6050** accelerometer & gyroscope sensor.  
 The system detects sudden changes in acceleration/angle that indicate a fall, then triggers an **alert** via buzzer, OLED display, and/or network notification.
 
+**Features:**
+- Detects falls in real-time using motion data
+- Configurable sensitivity threshold
+- Buzzer alert on fall detection
+- Optional OLED message display (`Fall Detected!`)
+- Optional Wi-Fi alert (Blynk / HTTP / MQTT)
+
