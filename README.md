@@ -39,3 +39,12 @@ The system detects sudden changes in acceleration/angle that indicate a fall, th
 
 
 ---
+### Buzzer → ESP32
+| Buzzer Pin  | ESP32 Pin |
+|-------------|-----------|
+| +           | GPIO 19   |
+| -           | GND       |
+
+
+---
+
