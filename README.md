@@ -47,4 +47,9 @@ The system detects sudden changes in acceleration/angle that indicate a fall, th
 
 
 ---
-
+## 💻 Software Requirements
+- Arduino IDE (with ESP32 Board Package installed)
+- MPU6050 Library (`Adafruit_MPU6050` or `MPU6050 by Electronic Cats`)
+- Wire.h library
+- Adafruit SSD1306 & GFX library 
+- Blynk / WiFi library *(for alerts over internet)
